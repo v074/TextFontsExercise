@@ -1,0 +1,67 @@
+/* Importing font from Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html{
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    /* Importing the background image */
+    background:url(starTrek.jpg);
+    /* Setting the position and size to center the image as well as cover the background. */
+    background-position:center;
+    background-size:cover;
+    /* technically not asked for but probably good SOP to make it not repeat. */
+    background-repeat:no-repeat;
+    /* Sets all text color within the body to rgba(255,255,255,0.6) */
+    color:rgba(255,255,255,0.6);
+}
+
+span{
+    /* Sets all span elements to the weight 700 text. */
+    font-weight:700;
+}
+
+h1{
+    font-size:50px;
+    /* Adds 10px spacing between letters */
+    letter-spacing: 10px;
+    /* Centers the text */
+    text-align:center;
+    /* Transforms the text into allcaps */
+    text-transform:uppercase;
+    /* Underlines the text */
+    text-decoration:underline;
+}
+
+#series-movies{
+    font-size:20px;
+}
+
+h2{
+    /* series-movies' font-size is 20px.  Setting h2, which is inside div, to 2em sets their size to 40px. */
+    font-size:2em;
+}
+
+li{
+    /* Sets the spacing between each <li> entry to 2 */
+    line-height:2;
+    /* As the default font size for HTML (root) is 16px and this has not changed, 1rem is the proper value to get 16px size font. */
+    font-size:1rem;
+}
+
+#characters{
+    font-size:18px;
+}
+
+h4{
+    /* Setting spacing to 15px */
+    letter-spacing: 15px;
+    /* Using the imported font. */
+    font-family:'Press Start 2P';
+}
+
+/* Technically speaking it would be more convenient to just put a "text-align:center in each of the header sections, but as-is, here's how to do it for all of them in three lines */
+h2, h3, h4{
+    text-align:center;
+}
